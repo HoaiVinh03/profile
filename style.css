@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+html {
+    font-family: Arial, Helvetica, sans-serifs;
+    background-color: #000;
+}
+
+
+.container {
+    background-image: url(/assets/css/image/HoaiVinh.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    width: 500px;
+    margin: 0px 50%;
+    transform: translateX(-250px);
+}
+
+.container .heading {
+    text-align: center;
+    padding-top: 80px
+}
+
+.container .fullname {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container .brithday {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.content .body-list {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 46%;
+}
+
+.content .body-network {
+}
+
+.content .body-facebook {
+    width: 150px;
+    color: #fff;
+    background-color: #3B5998;
+    font-size: 16px;
+    margin: 20px 25%;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.content .body-instargam {
+    width: 150px;
+    color: #fff;
+    background-color: #C13584;
+    font-size: 16px;
+    margin: 20px 25%;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.content .body-email {
+    width: 150px;
+    color: #fff;
+    background-color: #EA4335;
+    font-size: 16px;
+    margin: 20px 25%;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+
+.content .body-facebook:hover {
+    background-color: rgba(47, 48, 48, 0.5);
+}
+.content .body-instargam:hover {
+    background-color: rgba(47, 48, 48, 0.5);
+}
+.content .body-email:hover {
+    background-color: rgba(47, 48, 48, 0.5);
+}
+
+.content .body-email.body-email > i{
+    padding-right: 20px;
+}
+.footer-QR {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+}
+
+img {
+    max-width: 50px;
+    height: auto;
+}
+
+.modal-facebook {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+.modal-facebook.open {
+    display: flex;
+}
+
+.modal-facebook .modal-container {
+    width: 300px;
+    height: 300px;
+    background-color: #afa5a5;
+    border-radius: 10px;
+    animation: modalFaheIn ease-in-out 0.3s;
+}
+
+.modal-facebook .modal-close {
+    float: right;
+    padding: 8px;
+    border-top-right-radius: 10px;
+}
+
+.modal-facebook .modal-close:hover {
+    background-color: rgb(234, 110, 110);
+    
+}
+
+.modal-facebook .modal-header {
+    text-align: center;
+    padding-top: 46px;
+    /* font-weight: 550; */
+    font-size: 26px;
+}
+.modal-facebook .modal-body {
+    padding-left: 16px;
+    padding-top: 20px;
+}
+
+.modal-facebook .modal-mail, .modal-phone {
+    padding-top: 6px;
+    font-size: 17px;
+}
+.modal-facebook .facebook {
+    text-align: center;
+    padding-top: 80px;
+    display: block;
+}
+.modal-subfacebook {
+    text-decoration: none;
+    background-color:#3B5998;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.modal-subfacebook:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*  */
+
+
+.modal-instargam {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+.modal-instargam.openI {
+    display: flex;
+}
+
+.modal-instargam .modal-container {
+    width: 300px;
+    height: 300px;
+    background-color: #afa5a5;
+    border-radius: 10px;
+    animation: modalFaheIn ease-in-out 0.3s;
+}
+
+.modal-instargam .modal-close {
+    float: right;
+    padding: 8px;
+    border-top-right-radius: 10px;
+}
+
+.modal-instargam .modal-close:hover {
+    background-color: rgb(234, 110, 110);
+    
+}
+
+.modal-instargam .modal-header {
+    text-align: center;
+    padding-top: 46px;
+    /* font-weight: 550; */
+    font-size: 26px;
+}
+.modal-instargam .modal-body {
+    padding-left: 16px;
+    padding-top: 20px;
+}
+
+.modal-instargam .modal-mail, .modal-phone {
+    padding-top: 6px;
+    font-size: 17px;
+}
+.modal-instargam .instargam {
+    text-align: center;
+    padding-top: 80px;
+    display: block;
+}
+.modal-subinstargam {
+    text-decoration: none;
+    background-color:#C13584;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.modal-subinstargam:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*  */
+
+/*  */
+.modal-email {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+.modal-email.openE {
+    display: flex;
+}
+
+.modal-email  .modal-container {
+    width: 300px;
+    height: 300px;
+    background-color: #afa5a5;
+    border-radius: 10px;
+    animation: modalFaheIn ease-in-out 0.3s;
+}
+
+.modal-email  .modal-close {
+    float: right;
+    padding: 8px;
+    border-top-right-radius: 10px;
+}
+
+.modal-email  .modal-close:hover {
+    background-color: rgb(234, 110, 110);
+    
+}
+
+.modal-email  .modal-header {
+    text-align: center;
+    padding-top: 46px;
+    /* font-weight: 550; */
+    font-size: 26px;
+}
+.modal-email  .modal-body {
+    padding-left: 16px;
+    padding-top: 20px;
+}
+
+.modal-email  .modal-mail, .modal-phone {
+    padding-top: 6px;
+    font-size: 17px;
+}
+.modal-email  .email {
+    text-align: center;
+    padding-top: 80px;
+    display: block;
+}
+.modal-subemail {
+    text-decoration: none;
+    background-color:#EA4335;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.modal-subemail:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes modalFaheIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*  */
+
+
+   

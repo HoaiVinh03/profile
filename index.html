@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/css/image/logo.jpg" type="image/x-icon">
+    <title>Ho Hoai Vinh</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/font/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+
+        </header>
+
+        <content class="content">
+            
+            <div class="container">
+                <div class="heading">
+                    <p class="fullname">Hồ Hoài Vinh</p>
+                    <p class="brithday">08/04/2003</p>
+                </div>
+    
+                <ul class="body-list">
+                    <li class="body-network">
+                         <button class="body-facebook js-body-facebook"><i class="ti-facebook"> Facebook</i></button>
+                    </li>
+                    <li class="body-network">
+                        <button class="body-instargam js-body-instargam"><i class="ti-instagram"> Instargam</i></button>
+                    </li>
+                    <li class="body-network">
+                        <button class="body-email js-body-email"><i class="ti-email"> Email</i></button>
+                    </li>
+
+                </ul>
+
+                <div class="footer-QR">
+                    <img src="/assets/css/image/QR_Zalo.jpg" alt="Zalo">
+                </div>
+
+            </div>
+        </content>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+
+    <!--Begin facebook-->
+    <div class="modal-facebook js-facebook">
+        <div class="modal-container">
+            <div class="modal-close js-close-facebook">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal-header">
+                <i class="ti-user"></i>
+                Hồ Hoài Vinh
+            </div>
+
+            <div class="modal-body">
+                <p class="modal-mail">
+                    <i class="ti-email"> Email: hoaivinh123h@gmail.com</i>
+                </p>
+                <p class="modal-phone">
+                    <i class="ti-headphone"> Phone: 0839966943</i>
+                </p>
+            </div>
+            <div class="facebook">
+                <a class="modal-subfacebook" href="https://www.facebook.com/"><i class="ti-facebook"> Facebook</i></a>
+            </div>
+
+        </div>
+    </div>
+    <!--End facebook-->
+
+    <!--Begin instargam-->
+    <div class="modal-instargam js-instargam">
+        <div class="modal-container">
+            <div class="modal-close js-close-instargam">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal-header">
+                <i class="ti-user"></i>
+                Hồ Hoài Vinh
+            </div>
+
+            <div class="modal-body">
+                <p class="modal-mail">
+                    <i class="ti-email"> Email: hoaivinh123h@gmail.com</i>
+                </p>
+                <p class="modal-phone">
+                    <i class="ti-headphone"> Phone: 0839966943</i>
+                </p>
+            </div>
+            <div class="instargam">
+                <a class="modal-subinstargam" href="https://www.instagram.com/"><i class="ti-instagram"> Instargam</i></a>
+            </div>
+
+        </div>
+    </div>
+    <!--End instargam-->
+
+    <!--Begin email-->
+    <div class="modal-email js-email">
+        <div class="modal-container">
+            <div class="modal-close js-close-email">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal-header">
+                <i class="ti-user"></i>
+                Hồ Hoài Vinh
+            </div>
+
+            <div class="modal-body">
+                <p class="modal-mail">
+                    <i class="ti-email"> Email: hoaivinh123h@gmail.com</i>
+                </p>
+                <p class="modal-phone">
+                    <i class="ti-headphone"> Phone: 0839966943</i>
+                </p>
+            </div>
+            <div class="email">
+                <a class="modal-subemail" href="https://mail.google.com/mail/u/0/#inbox"><i class="ti-email"> Email</i></a>
+            </div>
+
+        </div>
+    </div>
+    <!--End email-->
+
+
+
+    <script>
+        //begin facebook
+        const facebook = document.querySelector('.js-body-facebook')
+        const modalfacebook = document.querySelector('.js-facebook')
+        const closefacebook = document.querySelector('.js-close-facebook')
+        
+        function Shownetworkfacebook (){
+            modalfacebook.classList.add('open')
+        }
+        
+        function hidenetworkfacebook (){
+            modalfacebook.classList.remove ('open')
+        }
+        
+        
+        facebook.addEventListener('click', Shownetworkfacebook)
+        closefacebook.addEventListener('click', hidenetworkfacebook)
+        //end facebook
+        //end facebook
+        
+        //begin instargam
+        const instargam = document.querySelector('.js-body-instargam')
+        const modalinstargam = document.querySelector('.js-instargam')
+        const closeinstargam = document.querySelector('.js-close-instargam')
+        function Shownetworkinstargam (){
+            modalinstargam.classList.add('openI')
+        }
+        function hidenetworkinstargam  (){
+            modalinstargam.classList.remove ('openI')
+        }
+
+        instargam.addEventListener('click', Shownetworkinstargam )
+        closeinstargam.addEventListener('click', hidenetworkinstargam )
+        //end instargam
+
+    
+        // //begin email
+        const email = document.querySelector('.js-body-email')
+        const modalemail = document.querySelector('.js-email')
+        const closeemail = document.querySelector('.js-close-email')
+        function Shownetworkemail (){
+            modalemail.classList.add('openE')
+        }
+        function hidenetworkemail  (){
+            modalemail.classList.remove ('openE')
+        }
+
+        email.addEventListener('click', Shownetworkemail )
+        closeemail.addEventListener('click', hidenetworkemail )
+        // //end email
+    </script>
+    
+</body>
+</html>
